@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <span class="octicon octicon-mark-github"></span>
+          <span class="text">GitHub</span>
+        </div>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search issues...">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="issues-container">
+        <div class="issues-header">
+          <nav class="issues-nav">
+            <a href="#" class="selected">Open</a>
+            <a href="#">Closed</a>
+            <a href="#">Pull Requests</a>
+          </nav>
+          <div class="issues-actions">
+            <button class="btn btn-primary">New issue</button>
+          </div>
+        </div>
+        <ul id="issues-list"></ul>
+        <div class="pagination">
+          <a href="#" class="prev">&lt; Prev</a>
+          <span class="current-page">Page 1</span>
+          <a href="#" class="next">Next &gt;</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
